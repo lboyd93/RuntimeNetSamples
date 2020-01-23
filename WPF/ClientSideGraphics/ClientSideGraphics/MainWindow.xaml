@@ -1,0 +1,17 @@
+﻿<Window x:Class="ClientSideGraphics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
+        xmlns:local="clr-namespace:ClientSideGraphics"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="525" Width="790">
+    <Window.Resources>
+        <local:MapViewModel x:Key="MapViewModel" />
+    </Window.Resources>
+    <Grid>
+        <esri:MapView x:Name="MyMapView" />
+        <Button Content="Clear Graphics Overlay" x:Name="ClearGO" HorizontalAlignment="Center" VerticalAlignment="Top" Width="147" Click="ClearGO_Click"/>
+    </Grid>
+</Window>
